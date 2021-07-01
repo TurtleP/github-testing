@@ -6,7 +6,7 @@ body:
   - type: input
     id: description
     attributes:
-      label: What happened?
+      label: What Happened?
       description: Describe the Bug.
       placeholder: A bug happened!
     validations:
@@ -14,7 +14,7 @@ body:
   - type: input
     id: expected
     attributes:
-      label: What was expected?
+      label: What was Expected?
       description: Describe what should happen.
       placeholder: The bug shouldn't happen!
     validations:
@@ -22,19 +22,54 @@ body:
   - type: textarea
     id: code
     attributes:
-      label: Code to reproduce
+      label: Code to Reproduce
       description: Please provide a **minimal** code sample. For big snippets,
                    use a service such as pastebin.
       render: Lua
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: console
     attributes:
       label: Console
       description: What console is LÖVE Potion running on?
       options:
-        - label: Switch
-        - label: 3DS
+        - Nintendo Switch
+        - Nintendo 3DS
+  - type: input
+    id: firmware
+    attributes:
+      label: Firmware Version
+      description: What is the firmware version the console is running?
+      placeholder: e.g. 11.14.0-46U, 12.0.3
     validations:
       required: true
+  - type: dropdown
+    id: custom_firmware
+    attributes:
+      label: Custom Firmware
+      description: What custom firmware are you running?
+      options:
+        - Luma3DS
+        - Atmosphère
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: execution
+    attributes:
+      label: Execution Method
+      options:
+        - Album
+        - Homebrew Menu (via Title Takeover)
+        - Other
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree that the above information is correct and accurate.
+                   Please note that if you selected 'Other' for Custom Firmware or Execution Method, your issue will be closed
+                   without comment.
+      options:
+        - label: I have read the Code of Conduct and agree to these terms
+          required: true
