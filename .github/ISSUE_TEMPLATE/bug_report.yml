@@ -47,25 +47,24 @@ body:
       options:
         - Nintendo Switch
         - Nintendo 3DS
+        - Both
     validations:
       required: true
   - type: input
     id: firmware
     attributes:
-      label: Firmware Version
+      label: Firmware Version(s)
       description: What is the firmware version the console is running?
       placeholder: e.g. 11.14.0-46U, 12.0.3
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: custom_firmware
     attributes:
-      label: Custom Firmware
-      description: What custom firmware are you running?
-      options:
-        - Luma3DS
-        - Atmosphère
-        - Other
+      label: Custom Firmware Version
+      description: What version(s) are you running? We can decipher which it is based
+                   on your Console selection. If 'Both' was selected, add both of them here.
+      placeholder: e.g. 10.2.1, 0.19.4
     validations:
       required: true
   - type: dropdown
@@ -82,7 +81,7 @@ body:
     attributes:
       label: Code of Conduct
       description: By submitting this issue, you agree that the above information is correct and accurate.
-                   Please note that if you selected 'Other' for Custom Firmware or Execution Method, your issue will be closed
+                   Please note that if you selected 'Other' for Execution Method, your issue will be closed
                    without comment.
       options:
         - label: I have read the Code of Conduct and agree to these terms
