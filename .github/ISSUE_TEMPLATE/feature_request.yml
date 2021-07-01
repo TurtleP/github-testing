@@ -33,6 +33,6 @@ body:
     attributes:
       label: Additional Context
       description: Further elaborate on any key points about this feature.
-      placeholder: Any other context or screenshots about the feature request here.
+      placeholder: Add any other context or screenshots.
     validations:
       required: true
