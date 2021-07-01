@@ -36,6 +36,8 @@ body:
       options:
         - Nintendo Switch
         - Nintendo 3DS
+    validations:
+      required: true
   - type: input
     id: firmware
     attributes:
