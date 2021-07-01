@@ -3,7 +3,7 @@ description: Tell us about unexpected behavior from LÖVE Potion.
 title: "[Bug]: "
 labels: [bug]
 body:
-  - type: textarea
+  - type: input
     id: description
     attributes:
       label: What happened?
@@ -11,7 +11,7 @@ body:
       placeholder: A bug happened!
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: expected
     attributes:
       label: What was expected?
@@ -24,6 +24,6 @@ body:
       label: Code to reproduce
       description: Please provide a **minimal** code sample. For big snippets,
                    use a service such as pastebin.
-      render: lua
+      render: Lua
     validations:
       required: true
