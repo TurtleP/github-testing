@@ -16,6 +16,7 @@ body:
     attributes:
       label: What was expected?
       description: Describe what should happen.
+      placeholder: The bug shouldn't happen!
     validations:
       required: true
   - type: textarea
@@ -25,5 +26,15 @@ body:
       description: Please provide a **minimal** code sample. For big snippets,
                    use a service such as pastebin.
       render: Lua
+    validations:
+      required: true
+  - type: checkboxes
+    id: console
+    attributes:
+      label: Console
+      description: What console is LÖVE Potion running on?
+      options:
+        - label: Switch
+        - label: 3DS
     validations:
       required: true
