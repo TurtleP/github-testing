@@ -3,7 +3,16 @@ description: Tell us about unexpected behavior from LÖVE Potion.
 title: "[Bug]: "
 labels: [bug]
 body:
-  - type: input
+  - type: dropdown
+    id: version
+    attributes:
+      label: Software Version
+      description: LÖVE Potion Version
+      options:
+        - 2.1.2 (Latest)
+    validations:
+      required: true
+  - type: textarea
     id: description
     attributes:
       label: What Happened?
@@ -11,7 +20,7 @@ body:
       placeholder: A bug happened!
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: expected
     attributes:
       label: What was Expected?
@@ -62,7 +71,6 @@ body:
     attributes:
       label: Execution Method
       options:
-        - Album
         - Homebrew Menu (via Title Takeover)
         - Other
     validations:
