@@ -65,6 +65,8 @@ body:
         - Album
         - Homebrew Menu (via Title Takeover)
         - Other
+    validations:
+      required: true
   - type: checkboxes
     id: terms
     attributes:
