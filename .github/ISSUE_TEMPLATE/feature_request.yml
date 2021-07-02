@@ -17,16 +17,14 @@ body:
     attributes:
       label: Enhancement Details
       description: Describe the new feature.
-      placeholder: A clear and concise description of what the problem is.
-                   For example, "I need feature x" for my game.
+      placeholder: I need feature x for my game.
     validations:
       required: true
   - type: input
     attributes:
       label: Solution
       description: Describe what this feature should do.
-      placeholder: A clear and concise description of what it should do. For example,
-                   "This feature should do y and z."
+      placeholder: This feature should do y and z.
     validations:
       required: true
   - type: textarea
